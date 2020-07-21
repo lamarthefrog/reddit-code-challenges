@@ -1,0 +1,29 @@
+#Reddit code challenge 16
+#write a function that takes two strings as argument
+#the program should print string 1 with all characters of string 2 removed
+
+#setting two strings to work with 
+test_string = "This string will have its vowels removed."
+vowels = "aeiou"
+
+def remove_characters(string1, string2):
+    split_string2 =[]
+    final_list =[]
+    
+    #converts the characters to remove into a list
+    for char2 in string2:
+        split_string2.append(char2)
+    #print(split_string2)  #test print
+
+    #converts the characters from the original string into a list
+    for char1 in string1:
+        #checks to see if character is not in remove-list
+        if char1 not in split_string2:
+            final_list.append(char1)
+    #.join() syntax takes the list you're joining as an argument
+            #empty string at the front just to have something to join to
+    final_string = "".join(final_list)
+    print(final_string)
+            
+
+remove_characters(test_string, vowels)
