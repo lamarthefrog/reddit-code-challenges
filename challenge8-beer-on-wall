@@ -1,0 +1,9 @@
+#reddit code challenge 8
+#make a program that prints out 99 bottles of beer on the wall
+
+beer_count = 100
+while beer_count > 0:
+    if beer_count == 1:
+        print(str(beer_count) + ' bottle of beer.')
+    print(str(beer_count) + ' bottles of beer.')
+    beer_count -= 1
