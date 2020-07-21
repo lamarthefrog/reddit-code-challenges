@@ -1,0 +1,4 @@
+#this program asks the user to input their name and twitter account, then puts those responses into a print statement
+name = input('What is your name? \n>')
+twitter_act = input('What is your Twitter accont? \n>')
+print('Your name is ' + str(name) + ' and your Twitter account is ' + str(twitter_act))
