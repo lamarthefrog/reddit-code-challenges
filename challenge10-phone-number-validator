@@ -1,0 +1,19 @@
+#Reddit Code Challenge 10
+#Make a phone number validator that takes a phone number and determines whether-
+#-or not it's a valid 10 digit number
+#should remove parentheses and dash characters in the code
+
+user_phone_number = str(input("Please enter a phone number to verify: \n>"))
+#test_number = "(716)-555-1234"
+
+split_number = []
+def phone_number_validator(string):
+    for char in string:
+        if char in "1234567890":
+            split_number.append(char)
+    if len(split_number) == 7 or len(split_number) == 10:
+        print("The phone number " + string + " is a valid phone number.")
+    else:
+        print("The phone number " + string + " is not a valid phone number.")
+
+phone_number_validator(user_phone_number)
