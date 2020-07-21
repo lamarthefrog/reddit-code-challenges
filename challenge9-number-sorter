@@ -1,0 +1,16 @@
+#Reddit Code Challenge 9
+#allow the user to input digits, then arrange them in numerical order
+
+digits = str(input("Please input an integer: "))
+
+#final_digits = digits.sort()
+#print(final_digits)
+
+
+split_list = []
+
+for char in digits:
+    split_list.append(char)
+
+split_list.sort()
+print(split_list)
