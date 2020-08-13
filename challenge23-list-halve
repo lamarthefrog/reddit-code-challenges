@@ -1,0 +1,24 @@
+#Reddit Challenge 23
+#Input: a list
+#Output: Return the two halves as different lists.
+#If the input list has an odd number, the middle item can go to either list.
+
+a_list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+#note for self: // is for integer divison in python (opposed to float)
+#useful here for finding the midpoint because it doesn't take remainder
+split_point = (len(a_list)- 1) // 2
+
+#print(split_point)    test print
+
+front_half = a_list[:split_point]
+back_half = a_list[split_point:]
+
+print(front_half)
+print(back_half)
+
+
+#debriefing:
+    #for this one the main thing was to find the halfway point of the list
+    #remember that when using brackets to split a list, the side with the-
+    #-number on it is the point that gets cut off
