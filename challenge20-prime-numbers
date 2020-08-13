@@ -1,0 +1,27 @@
+#create a program that lists every prime number from 1 to 2000
+
+#starting by making a list with the range function
+list_2000 = list(range(1,2001))
+#print(list_2000)    test print
+
+
+#even numbers (with the exception of 2) cannot be prime, find odds
+list_2000_a = [2]
+for item in list_2000:
+    if item > 2 and item % 2 != 0:
+        list_2000_a.append(item)
+
+#print(list_2000_a)   test print
+
+#made a list of 1s place prime numbers to append to
+list_2000_b = [1, 2, 3, 5, 7]
+
+#iterate through list_2000_a, only take numbers in list that don't have divisors
+#append to list_2000_b
+for item in list_2000_a:
+    if item % 2 != 0 and item % 3 != 0 and item % 5 != 0 and item % 7 != 0:
+        list_2000_b.append(item)
+
+print(list_2000_b)
+
+#notes for future: name lists bettter, utilize exceptions instead of hardcoding in 1 digit prime numbers into list_2000_b
